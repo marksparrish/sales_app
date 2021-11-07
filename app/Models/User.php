@@ -2,8 +2,7 @@
 
 namespace App\Models;
 
-use App\Elastic\Finder;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
+use App\Elastic\Findable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -18,7 +17,7 @@ class User extends Authenticatable
     use HasProfilePhoto;
     use Notifiable;
     use TwoFactorAuthenticatable;
-    use Finder;
+    use Findable;
 
     /**
      * The attributes that are mass assignable.
