@@ -1,4 +1,4 @@
-##To install 
+## To install 
 
     ./vendor/sail up -d
     ./vendor/sail composer install
