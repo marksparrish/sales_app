@@ -86,7 +86,7 @@ services:
         container_name: es-sail
         environment:
             - node.name=es-sail
-            - cluster.name=es-docker-cluster
+            - discovery.type=single-node
             - bootstrap.memory_lock=true
             - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
         ulimits:
