@@ -17,7 +17,7 @@ trait Findable
             return app($builder,['model' => $model]);
         } else {
             // generic builder if there is no associated model builder class
-            $builder = 'App\\Elastic\\Builders\\Builder' ;
+            $builder = __NAMESPACE__ . '\\Builders\\Builder' ;
             return app($builder,['model' => $model]);
         }
     }
